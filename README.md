@@ -10,8 +10,14 @@ Los 2 slider del proyecto quedaron terminados y se les integraron algunas animac
 
 Este desarrollo cuenta con algunas animaciones para dar una mejor experiencia de usuario en este proyecto.
 
+Uno de los problemas a los que me enfrente fue que al subir el proyecto a GitHub Pages no puede cargar todas las imágenes, pero en el servidor local si se encuentran todas estas.
+
 ## Mis datos
 
 Jampier Santiago Moreno Arenas
 
 Zipaquira (Cundinamarca)
+
+## Publicación
+
+El proyecto se encuentra subido en [ver proyecto](https://jampier-santiago.github.io/prueba-serempre/).
