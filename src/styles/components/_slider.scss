@@ -1,0 +1,50 @@
+.container-slider {
+  margin-top: 48px;
+  box-sizing: border-box;
+
+  &__slider {
+    width: 100%;
+    height: 183px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    border: 2px solid $grey-light;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .window-slider {
+      width: 100%;
+      height: 100%;
+      @include alignWidthFlex(center, center, row);
+      flex-shrink: 0;
+
+      img {
+        width: 166px;
+      }
+    }
+  }
+
+  &__controls {
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    .control-slider {
+      width: 100%;
+      @include alignWidthFlex(center, center, row);
+      border: 2px solid $grey-light;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 50px;
+      }
+
+      &.active {
+        border: 3px solid $dark;
+      }
+    }
+  }
+}
