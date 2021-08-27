@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import App from "./App";
+import "./styles/style.scss";
+import { Price } from "./context/Price";
 import reportWebVitals from "./reportWebVitals";
+import Main from "./pages/Main";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Price.Provider value={295.95}>
+    <Main />
+  </Price.Provider>,
   document.getElementById("root")
 );
 

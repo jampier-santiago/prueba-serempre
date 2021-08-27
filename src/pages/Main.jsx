@@ -1,14 +1,24 @@
 // Dependecies
-import React, { useEffect } from "react";
-import Card from "../components/Card";
-import Footer from "../components/Footer";
+import React, { useEffect, useContext } from "react";
 
 // Components
 import Nav from "../components/Nav";
 import Slider from "../components/Slider";
 import SliderInfo from "../components/SliderInfo";
+import Card from "../components/Card";
+import Footer from "../components/Footer";
+
+// Assets
+import iconHand from "../assets/images/iconHand.png";
+import iconActiveNoise from "../assets/images/iconActiveNoise.png";
+import iconEqualizer from "../assets/images/iconEqualizer.png";
+
+// Context
+import { Price } from "../context/Price";
 
 export default function Main() {
+  const price = useContext(Price);
+
   useEffect(() => {
     document.title = "Serempre";
   }, []);
@@ -18,6 +28,21 @@ export default function Main() {
       <section className="container-page">
         <Nav />
         <Slider />
+
+        <section className="container-icons">
+          <div className="icon">
+            <img src={iconHand} alt="Icono de una mano" />
+            <span>Customizable Touch Controls</span>
+          </div>
+          <div className="icon">
+            <img src={iconActiveNoise} alt="Icono de touch" />
+            <span>Active Noise Cancellation</span>
+          </div>
+          <div className="icon">
+            <img src={iconEqualizer} alt="Icono de hondas auditivas" />
+            <span>Built-in Equalizer</span>
+          </div>
+        </section>
 
         <section className="product-title">
           <div className="product-title__alert">
@@ -29,7 +54,7 @@ export default function Main() {
           </div>
           <div className="product-title__price">
             <small>Starting at</small>
-            <h3>$295.95</h3>
+            <h3>${price}</h3>
           </div>
         </section>
 

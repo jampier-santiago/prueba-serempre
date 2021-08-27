@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+// --- container icons ---
+.container-icons {
+  display: none;
+}
+// --- container icons ---
+
 // --- info product ---
 .product-title {
   width: 100%;
@@ -69,6 +75,7 @@
 // --- your finish ---
 .container-your-finish {
   width: 100%;
+  max-width: 543px;
   margin-top: 50px;
   box-sizing: border-box;
 
@@ -149,3 +156,58 @@
   }
 }
 // --- Specifications ---
+
+// --- Responsive design ---
+// ... 768px  ...
+@media (min-width: 767px) {
+  .container-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-icons {
+    width: 543px;
+    margin-top: 50px;
+    @include alignWidthFlex(space-between, center, row);
+
+    .icon {
+      @include alignWidthFlex(center, center, column);
+
+      img {
+        width: 27px;
+        margin-bottom: 15px;
+      }
+
+      span {
+        color: $dark;
+        font-weight: $font-weight-text;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .product-title {
+    max-width: 543px;
+
+    &__title {
+      h2 {
+        width: 60%;
+        font-size: 39px;
+      }
+
+      h3 {
+        font-size: 27px;
+      }
+    }
+  }
+
+  .container-specifications {
+    max-width: 543px;
+
+    &__table .table__row {
+      @include alignWidthFlex(space-between, center, row);
+    }
+  }
+}
+// ... 768px  ...

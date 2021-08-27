@@ -90,15 +90,15 @@ export default function SliderInfo() {
           </p>
           <div className="icons">
             <img src={iconHand} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <span>Customizable Touch Controls</span>
           </div>
           <div className="icons">
-            <img src={iconActiveNoise} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <img src={iconActiveNoise} alt="Icono de touch" />
+            <span>Active Noise Cancellation</span>
           </div>
           <div className="icons">
-            <img src={iconEqualizer} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <img src={iconEqualizer} alt="Icono de hondas auditivas" />
+            <span>Built-in Equalizer</span>
           </div>
         </div>
         <div className="window-slider-info" ref={window2}>
@@ -116,15 +116,15 @@ export default function SliderInfo() {
           </p>
           <div className="icons">
             <img src={iconHand} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <span>Customizable Touch Controls</span>
           </div>
           <div className="icons">
-            <img src={iconActiveNoise} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <img src={iconActiveNoise} alt="Icono de touch" />
+            <span>Active Noise Cancellation</span>
           </div>
           <div className="icons">
-            <img src={iconEqualizer} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <img src={iconEqualizer} alt="Icono de hondas auditivas" />
+            <span>Built-in Equalizer</span>
           </div>
         </div>
         <div className="window-slider-info" ref={window3}>
@@ -142,15 +142,15 @@ export default function SliderInfo() {
           </p>
           <div className="icons">
             <img src={iconHand} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <span>Customizable Touch Controls</span>
           </div>
           <div className="icons">
-            <img src={iconActiveNoise} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <img src={iconActiveNoise} alt="Icono de touch" />
+            <span>Active Noise Cancellation</span>
           </div>
           <div className="icons">
-            <img src={iconEqualizer} alt="Icono de una mano" />
-            <span>Customizable Touch Controls </span>
+            <img src={iconEqualizer} alt="Icono de hondas auditivas" />
+            <span>Built-in Equalizer</span>
           </div>
         </div>
       </div>

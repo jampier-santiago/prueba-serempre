@@ -1,8 +1,20 @@
 .container-footer {
   background-color: #d2d2d7;
   padding: 20px;
-  @include alignWidthFlex(center, flex-end, column);
+  @include alignWidthFlex(flex-end, center, row);
   box-sizing: border-box;
+
+  .section-left {
+    display: none;
+
+    h3 {
+      margin: 0;
+
+      &:first-of-type {
+        margin-bottom: 10px;
+      }
+    }
+  }
 
   &__info {
     @include alignWidthFlex(center, flex-end, column);
@@ -39,3 +51,31 @@
     }
   }
 }
+// --- Responsive design ---
+// ... 768px  ...
+@media (min-width: 767px) {
+  .container-footer {
+    height: 113px;
+    justify-content: space-around;
+
+    .section-left {
+      @include alignWidthFlex(space-between, flex-start, column);
+    }
+
+    .section-right {
+      @include alignWidthFlex(space-between, center, row);
+    }
+
+    &__info {
+      h2 {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__button {
+      margin: 0;
+      margin-left: 50px;
+    }
+  }
+}
+// ... 768px  ...

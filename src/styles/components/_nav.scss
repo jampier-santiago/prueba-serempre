@@ -9,3 +9,16 @@
     width: 50px;
   }
 }
+
+// --- Responsive design ---
+// ... 768px  ...
+@media (min-width: 767px) {
+  .nav {
+    max-width: 543px;
+
+    & img {
+      width: 58px;
+    }
+  }
+}
+// ... 768px  ...

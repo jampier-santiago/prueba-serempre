@@ -19,11 +19,18 @@ export default function Card({ title, text, price }) {
       className={active ? "container-card active" : "container-card"}
       onClick={addClassActive}
     >
-      <div className="container-card__title">
-        <h2>{title}</h2>
+      <div
+        className="section-left"
+        style={price ? { width: "75%" } : { width: "100%" }}
+      >
+        <div className="container-card__title">
+          <h2>{title}</h2>
+        </div>
+        <div className="container-card__text">
+          <p>{text}</p>
+        </div>
       </div>
-      <div className="container-card__text">
-        <p style={price ? { width: "75%" } : { width: "100%" }}>{text}</p>
+      <div className="section-right">
         <span>{price}</span>
       </div>
     </section>

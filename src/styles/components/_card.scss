@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 20px;
   padding: 20px;
+  @include alignWidthFlex(space-between, center, row);
   border-radius: 8px;
   border: 2px solid $grey-light;
   box-sizing: border-box;
@@ -28,7 +29,9 @@
       font-weight: $font-weight-text;
       line-height: 24px;
     }
+  }
 
+  .section-right {
     span {
       color: $dark;
       font-size: 14px;

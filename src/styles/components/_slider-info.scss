@@ -82,3 +82,16 @@
     }
   }
 }
+
+// --- Responsive design ---
+// ... 768px  ...
+@media (min-width: 767px) {
+  .container-slider-info {
+    max-width: 543px;
+
+    &__window .window-slider-info .icons {
+      display: none;
+    }
+  }
+}
+// ... 768px  ...
