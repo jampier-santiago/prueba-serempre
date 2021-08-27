@@ -1,4 +1,4 @@
-# Projecto ed Serempre
+# Projecto de Serempre
 
 Para solucionar este proyecto decidí empezar el diseño con mobile first, para que fuera más rápida y eficiente la adaptación de la página a otros tipos de dispositivos.
 
