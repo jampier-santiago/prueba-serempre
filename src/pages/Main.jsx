@@ -61,6 +61,38 @@ export default function Main() {
           ></Card>
         </div>
       </section>
+
+      <section className="container-specifications">
+        <div className="container-specifications__title">
+          <h2>Specifications.</h2>
+        </div>
+        <div className="container-specifications__table">
+          <div className="table__row">
+            <h3>Dimensions</h3>
+            <span>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</span>
+          </div>
+          <div className="table__row">
+            <h3>USB Standard</h3>
+            <span>USB-C</span>
+          </div>
+          <div className="table__row">
+            <h3>Power supply</h3>
+            <span>Sennheiser 7mm dynamic driver</span>
+          </div>
+          <div className="table__row">
+            <h3>Frequency response (Microphone)</h3>
+            <span>100 Hz to 10 kHz</span>
+          </div>
+          <div className="table__row">
+            <h3>Frequency response</h3>
+            <span>5 - 21,000 Hz</span>
+          </div>
+          <div className="table__row">
+            <h3>Noise cancellation</h3>
+            <span>Single-Mic ANC per earbud side</span>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

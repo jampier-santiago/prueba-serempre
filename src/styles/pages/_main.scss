@@ -105,3 +105,47 @@
   }
 }
 // --- add extended ---
+
+// --- Specifications ---
+.container-specifications {
+  width: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+
+  &__title {
+    width: 100%;
+
+    h2 {
+      @extend %title;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 2px solid $grey-light;
+    box-sizing: border-box;
+
+    .table__row {
+      width: 100%;
+      padding: 15px 0;
+      border-bottom: 2px solid $grey-light;
+      box-sizing: border-box;
+
+      h3 {
+        margin: 0;
+        margin-bottom: 5px;
+        color: $dark;
+        font-weight: $font-weight-title;
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: $font-weight-text;
+        line-height: 20px;
+      }
+    }
+  }
+}
+// --- Specifications ---
