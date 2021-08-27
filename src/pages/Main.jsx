@@ -4,6 +4,7 @@ import React from "react";
 // Components
 import Nav from "../components/Nav";
 import Slider from "../components/Slider";
+import SliderInfo from "../components/SliderInfo";
 
 export default function Main() {
   return (
@@ -24,6 +25,8 @@ export default function Main() {
           <h3>$295.95</h3>
         </div>
       </section>
+
+      <SliderInfo />
     </section>
   );
 }

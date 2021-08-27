@@ -7,8 +7,6 @@ import imagen2 from "../assets/images/imagen-2.png";
 import imagen3 from "../assets/images/imagen-3.png";
 
 export default function Slider() {
-  const [positionSlider, setPositionSlider] = useState(0);
-
   // Controles
   const control1 = useRef();
   const control2 = useRef();
@@ -52,8 +50,6 @@ export default function Slider() {
     window2.current.style.transform = `translateX(-${position * 100}%)`;
     window3.current.style.transform = `translateX(-${position * 100}%)`;
   }
-
-  useMemo(() => {}, [positionSlider]);
 
   return (
     <section className="container-slider">
