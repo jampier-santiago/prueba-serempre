@@ -11,3 +11,7 @@ $dark: #111111;
 $font: "Roboto", sans-serif;
 $font-weight-title: 700;
 $font-weight-text: 400;
+
+* {
+  font-family: $font;
+}

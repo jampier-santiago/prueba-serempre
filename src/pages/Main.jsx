@@ -1,5 +1,6 @@
 // Dependecies
 import React from "react";
+import Card from "../components/Card";
 
 // Components
 import Nav from "../components/Nav";
@@ -27,6 +28,39 @@ export default function Main() {
       </section>
 
       <SliderInfo />
+
+      <section className="container-your-finish">
+        <div className="container-your-finish__title">
+          <h2>Choose your finish.</h2>
+        </div>
+        <div className="container-your-finish__cards">
+          <Card
+            title="Ivory White"
+            text="For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True. "
+          />
+          <Card
+            title="Matte Black"
+            text="Of all of the celestial bodies that capture our attention and fascination as astronomers."
+          />
+        </div>
+      </section>
+
+      <section className="container-add-extended">
+        <div className="container-add-extended__title">
+          <h2>Would you like to add extended.</h2>
+        </div>
+        <div className="container-add-extended__cards">
+          <Card
+            title="2 years coverage"
+            text="For the past 75 years, Sennheiser has put sound first."
+          ></Card>
+          <Card
+            title="3 years coverage"
+            text="For the past 75 years, Sennheiser has put sound first."
+            price="+ $75"
+          ></Card>
+        </div>
+      </section>
     </section>
   );
 }
