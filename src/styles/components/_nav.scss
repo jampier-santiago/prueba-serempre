@@ -1,0 +1,11 @@
+.nav {
+  width: 90%;
+  height: 67px;
+  margin: 0 auto;
+  @include alignWidthFlex(center, center, row);
+  border-bottom: 1px solid $grey-light;
+
+  & img {
+    width: 50px;
+  }
+}
