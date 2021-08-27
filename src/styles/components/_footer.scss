@@ -1,0 +1,41 @@
+.container-footer {
+  background-color: #d2d2d7;
+  padding: 20px;
+  @include alignWidthFlex(center, flex-end, column);
+  box-sizing: border-box;
+
+  &__info {
+    @include alignWidthFlex(center, flex-end, column);
+
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+      color: $dark;
+      font-size: 27px;
+      font-weight: 700;
+    }
+
+    span {
+      color: $grey;
+      font-size: 14px;
+      font-weight: $font-weight-text;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    @include alignWidthFlex(center, flex-end, column);
+
+    span {
+      width: 113px;
+      height: 56px;
+      @include alignWidthFlex(center, center, row);
+      color: white;
+      border-radius: 8px;
+      background-color: $blue;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+}
