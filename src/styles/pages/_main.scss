@@ -2,3 +2,62 @@
   padding: 16px;
   box-sizing: border-box;
 }
+
+.product-title {
+  width: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+
+  &__alert {
+    width: 100%;
+
+    span {
+      color: $red;
+      font-family: $font;
+      font-weight: $font-weight-text;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    width: 100%;
+
+    h2 {
+      margin: 0;
+      margin-top: 10px;
+      font-family: $font;
+      font-weight: $font-weight-title;
+      font-size: 33px;
+      text-align: left;
+      line-height: 44px;
+    }
+
+    h3 {
+      margin: 0;
+      margin-top: 10px;
+      color: $grey;
+      font-family: $font;
+      font-size: 22px;
+    }
+  }
+
+  &__price {
+    margin-top: 40px;
+
+    small {
+      color: $grey;
+      font-family: $font;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0;
+      margin-top: 10px;
+      font-family: $font;
+      font-weight: $font-weight-title;
+      font-size: 40px;
+    }
+  }
+}
