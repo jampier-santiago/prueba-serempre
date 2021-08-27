@@ -1,0 +1,34 @@
+.container-loading {
+  width: 99vw;
+  height: 99vh;
+
+  &__loader {
+    width: 100%;
+    height: 500px;
+    @include alignWidthFlex(center, center, row);
+
+    span {
+      margin: 0 5px;
+      display: inline-block;
+      color: $blue;
+      font-size: 30px;
+      font-weight: $font-weight-title;
+      text-transform: uppercase;
+      animation: moveLetters 1.2s ease-in-out infinite;
+    }
+  }
+}
+
+/* Animaciones */
+@keyframes moveLetters {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -48,6 +48,7 @@
       font-size: 16px;
       font-weight: 700;
       letter-spacing: 1px;
+      cursor: pointer;
     }
   }
 }
@@ -79,3 +80,17 @@
   }
 }
 // ... 768px  ...
+
+// ... 1280 ...
+@media (min-width: 1279px) {
+  .container-footer {
+    height: 72px;
+    padding: 0px 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+  }
+}
+// ... 1280 ...

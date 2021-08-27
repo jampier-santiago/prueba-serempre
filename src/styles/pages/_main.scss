@@ -113,6 +113,27 @@
 }
 // --- add extended ---
 
+// --- features ---
+.container-features {
+  width: 100%;
+  margin: 50px 0;
+  box-sizing: border-box;
+
+  &__title {
+    width: 100%;
+
+    h2 {
+      @extend %title;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+// --- features ---
+
 // --- Specifications ---
 .container-specifications {
   width: 100%;
@@ -211,3 +232,32 @@
   }
 }
 // ... 768px  ...
+
+// ... 1280 ...
+@media (min-width: 1279px) {
+  .container-icons {
+    margin-top: 30px;
+  }
+
+  .main {
+    width: 90%;
+    position: relative;
+    @include alignWidthFlex(center, flex-start, row);
+
+    .section-top {
+      position: fixed;
+      left: 7%;
+      top: 80px;
+    }
+
+    .section-bottom {
+      margin-left: calc(50% + 50px);
+      @include alignWidthFlex(center, center, column);
+    }
+  }
+
+  .container-specifications {
+    margin-bottom: 60px;
+  }
+}
+// ... 1280 ...

@@ -1,17 +1,24 @@
 // Props
 // Title: Debe llegar el titulo de la tarjeta
 // Text: Debe llegar el texto para la tarjeta
-// Price: Debe llegar el precio, en caso de que la tarjeta lo necesite
+// valuePrice: Debe llegar el precio, en caso de que la tarjeta lo necesite
 
 // Depencies
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import Price from "../context/Price";
 
-export default function Card({ title, text, price }) {
+export default function Card({ title, text, valuePrice }) {
   const [active, setActive] = useState(false);
+  const { price, setPrice } = useContext(Price);
 
   // Función para colocar la clase active a la tarjeta
   function addClassActive() {
     setActive(!active);
+
+    if (valuePrice) {
+      const temporaryPrice = valuePrice.split("$")[1];
+      setPrice(price + parseInt(temporaryPrice));
+    }
   }
 
   return (
@@ -21,17 +28,20 @@ export default function Card({ title, text, price }) {
     >
       <div
         className="section-left"
-        style={price ? { width: "75%" } : { width: "100%" }}
+        style={valuePrice ? { width: "75%" } : { width: "100%" }}
       >
         <div className="container-card__title">
           <h2>{title}</h2>
         </div>
-        <div className="container-card__text">
+        <div
+          className="container-card__text"
+          style={text ? { display: "block" } : { display: "none" }}
+        >
           <p>{text}</p>
         </div>
       </div>
       <div className="section-right">
-        <span>{price}</span>
+        <span>{valuePrice}</span>
       </div>
     </section>
   );

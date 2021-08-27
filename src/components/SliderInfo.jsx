@@ -47,8 +47,11 @@ export default function SliderInfo() {
   // Funcion para mover el slider
   function moveSlider(position) {
     window1.current.style.transform = `translateX(-${position * 100}%)`;
+    window1.current.style.transitionDuration = "0.2s";
     window2.current.style.transform = `translateX(-${position * 100}%)`;
+    window2.current.style.transitionDuration = "0.2s";
     window3.current.style.transform = `translateX(-${position * 100}%)`;
+    window3.current.style.transitionDuration = "0.2s";
   }
 
   return (

@@ -1,3 +1,5 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 
-export const Price = createContext(295.95);
+const Price = createContext({ price: undefined, setPrice: () => null });
+
+export default Price;

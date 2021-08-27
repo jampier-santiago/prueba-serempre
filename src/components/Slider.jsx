@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useState, useRef, useMemo } from "react";
+import React, { useRef } from "react";
 
 // Assets
 import imagen1 from "../assets/images/imagen-1.png";
@@ -47,8 +47,11 @@ export default function Slider() {
   // Funcion para mover el slider
   function moveSlider(position) {
     window1.current.style.transform = `translateX(-${position * 100}%)`;
+    window1.current.style.transitionDuration = "0.25s";
     window2.current.style.transform = `translateX(-${position * 100}%)`;
+    window2.current.style.transitionDuration = "0.25s";
     window3.current.style.transform = `translateX(-${position * 100}%)`;
+    window3.current.style.transitionDuration = "0.25s";
   }
 
   return (

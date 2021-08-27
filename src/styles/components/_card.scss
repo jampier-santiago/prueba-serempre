@@ -6,6 +6,7 @@
   border-radius: 8px;
   border: 2px solid $grey-light;
   box-sizing: border-box;
+  cursor: pointer;
 
   &__title {
     width: 100%;
@@ -40,6 +41,17 @@
   }
 
   &.active {
+    animation: addBorderCard 0.2s ease-in-out forwards;
+  }
+}
+
+// Animations
+@keyframes addBorderCard {
+  from {
+    border: 2px solid $grey-light;
+  }
+
+  to {
     border: 2px solid $blue;
   }
 }

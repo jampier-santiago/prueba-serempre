@@ -27,10 +27,10 @@
         margin: 0;
         padding: 5px;
         color: $grey;
-
         font-weight: 500;
         font-size: 19px;
         box-sizing: border-box;
+        cursor: pointer;
 
         &.active {
           color: $dark;

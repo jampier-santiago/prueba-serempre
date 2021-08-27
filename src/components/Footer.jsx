@@ -1,9 +1,9 @@
 // Dependencies
 import React, { useContext } from "react";
-import { Price } from "../context/Price";
+import Price from "../context/Price";
 
 export default function Footer() {
-  const price = useContext(Price);
+  const { price } = useContext(Price);
 
   return (
     <footer className="container-footer">
